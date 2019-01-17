@@ -1,0 +1,114 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#infoImg {
+  width: 3%;
+  display: block;
+  margin: auto;
+}
+
+#player {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 0.5em;
+}
+
+#viewer {
+  width: 80.06%;
+  height: 100%;
+}
+
+#controls {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+#progress {
+  width: 100%;
+  background-color: grey;
+}
+
+#progress_filled {
+  width: 0%;
+  height: 30px;
+  background-color: #bada55;
+}
+
+#buttonsHolder {
+  display: flex;
+  justify-content: space-between;
+}
+
+#toggle {
+  width: 3vw;
+  padding: 0;
+}
+
+.sliderWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 31%;
+  text-align: center;
+  background-color: #eaeaea;
+  border-width: 1.4px;
+  border-style: outset;
+}
+
+.labels {
+  vertical-align: super;
+}
+
+#volumeSlider,
+#videoSpeedSlider {
+  width: 34%;
+}
+
+#skipBackward,
+#skipForward {
+  width: 15%;
+}
+
+#fullScreen {
+  width: 3vw;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+#fsImg {
+  width: 77%;
+}
+
+@media only screen and (max-width: 567px) {
+
+  #volumeSlider,
+  #videoSpeedSlider {
+    width: 86%;
+  }
+
+  #toggle {
+    width: 2vh;
+  }
+
+  #buttonsHolder {
+    height: 4em;
+  }
+
+  .sliderWrapper {
+    flex-direction: column;
+  }
+
+  #fullScreen {
+    width: 2vh;
+  }
+}
