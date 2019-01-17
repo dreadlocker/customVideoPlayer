@@ -122,7 +122,7 @@ window.onload = function () {
       Document.exittFullscreen();
     } else if (video.mozExitFullScreen) {
       Document.mozExitFullScreen();
-    } else if (Document.webkitExitFullscreen) {
+    } else if (video.webkitExitFullscreen) {
       Document.webkitExitFullscreen();
     } else if (video.msExitFullscreen) {
       Document.msExitFullscreen();
